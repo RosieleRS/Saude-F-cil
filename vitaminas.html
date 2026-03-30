@@ -1,0 +1,81 @@
+html
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<title>Vitaminas</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🌿 Saúde Fácil</h1>
+</header>
+
+<nav>
+<a href="index.html">Início</a> |
+<a href="medicamentos.html">Medicamentos</a> |
+<a href="registro.html">Registro</a> |
+<a href="dicas.html">Dicas</a> |
+<a href="vitaminas.html">Vitaminas</a>
+</nav>
+
+<hr>
+
+<h2>Controle de Vitaminas</h2>
+
+<!-- B12 -->
+<h3>Vitamina B12 (uso semestral)</h3>
+<input type="date" id="dataB12">
+<input type="text" id="medicamentoB12" placeholder="Medicamento para B12">
+<button onclick="adicionarB12()">Adicionar</button>
+<ul id="listaB12"></ul>
+
+<!-- Vitamina D -->
+<h3>Vitamina D (uso semestral)</h3>
+<input type="date" id="dataD">
+<input type="text" id="medicamentoD" placeholder="Medicamento para Vitamina D">
+<button onclick="adicionarD()">Adicionar</button>
+<ul id="listaD"></ul>
+
+<!-- Registro dos níveis -->
+<h3>Níveis de Vitaminas</h3>
+
+
+<h3>Níveis de Vitaminas</h3>
+
+<p><strong>Valores recomendados:</strong></p>
+<ul>
+<li>Vitamina B12: 200 a 900 pg/mL</li>
+<li>Vitamina D: 30 a 60 ng/mL</li>
+</ul>
+
+<input type="number" id="b12" placeholder="Seu nível de B12">
+<input type="number" id="vitaminaD" placeholder="Seu nível de Vitamina D">
+
+<br><br>
+
+<button onclick="salvarVitaminas()">Salvar</button>
+
+<p id="resultadoVitaminas"></p>
+
+
+
+<footer>
+
+<hr>
+
+<p>Projeto acadêmico ADS</p>
+<p>Integrantes: Rosiele Santos</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
+
+
